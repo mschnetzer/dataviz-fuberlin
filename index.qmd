@@ -1,0 +1,838 @@
+---
+metadata-files: 
+    - _variables.yml
+title: "{{< var course.title >}}"
+author: "{{< var instructor.name-wo-title >}}"  
+date-format: long
+from: markdown+emoji
+bibliography: data/dataviz.bib
+csl: data/dataviz.csl
+execute:
+  freeze: auto
+  echo: true
+  fig-width: 6
+  fig-height: 5
+format:
+  revealjs:
+    theme: dataviz.scss
+    footer: '{{< var course.title >}} | {{< var course.location >}} | {{< var course.date >}}'
+    slide-number: true
+    show-slide-number: all
+    transition: fade
+    progress: true
+    multiplex: false
+    scrollable: false
+    preview-links: false
+    hide-inactive-cursor: true
+    highlight-style: printing
+    pause: true
+title-slide-attributes:
+    data-background-image: "img/bgimage2.png"
+    data-background-position: 0% 95%
+    data-background-size: contain
+---
+
+## Über mich {.smaller}
+
+::: columns
+::: {.column width="30%"}
+![](img/profile-pic.jpg){.absolute top="20%" left="7%" style="display: inline-block; width: 150px; height: 150px;border-radius:50%;"}
+:::
+::: {.column width="70%" .iconlist}
+- <i class="fa-solid fa-user icon"></i> {{< var instructor.name-wo-title >}}
+- <i class="fa-solid fa-building icon"></i> {{< var instructor.employer >}}
+- <i class="fa-solid fa-envelope icon"></i> [{{< var instructor.email >}}](mailto:{{< var instructor.email >}})
+- <i class="fa-solid fa-globe icon"></i> [{{< var instructor.url >}}]({{< var instructor.url >}})
+- <i class="fa-brands fa-twitter icon"></i> [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
+
+<br> 
+Ein Blick in meine Arbeiten:
+
+- <i class="fa-solid fa-image icon"></i> [https://mschnetzer.github.io/portfolio/](https://mschnetzer.github.io/portfolio/)
+- <i class="fa-solid fa-chart-column icon"></i> [https://github.com/mschnetzer/datendrang](https://github.com/mschnetzer/datendrang)
+:::
+:::
+
+
+# Die frühen Stars der Datenvisualisierung
+
+::: {.absolute top="90%" left="30%" width="400px" height="336px"}
+![](img/avatar_cool.png)
+:::
+
+::: footer
+:::
+
+## William Playfair (1759-1823) {.smaller}
+
+![](img/playfair.png){height="500" fig-align="center"}
+
+::: {.aside}
+[erstellt: 1786]
+:::
+
+## John Snow (1813-1858) {.smaller}
+
+::: {.columns}
+::: {.column width=60%}
+![](img/cholera_large.jpg){height="450" style="border: 1px solid;"}
+:::
+
+::: {.column width=35%}
+![](img/cholera_detail.png){height="450" style="border: 1px solid;"}
+:::
+:::
+
+::: {.aside}
+[erstellt: 1854]
+:::
+
+## Charles Joseph Minard (1781-1870) {.smaller}
+
+![](img/minard.png){fig-align="center"}
+
+::: {.aside}
+[erstellt: 1869]
+:::
+
+## W.E.B. Du Bois (1868-1963) {.smaller}
+
+::: {.columns}
+::: {.column}
+![](img/dubois1.png){height="500" style="border: 1px solid;"}
+:::
+
+::: {.column}
+![](img/dubois2.png){height="500" style="border: 1px solid;"}
+:::
+:::
+
+::: {.aside}
+[erstellt: 1890]
+:::
+
+## Otto Neurath (1882-1945) {.smaller}
+
+![](img/neurath.png){height="500" fig-align="center"}
+
+::: {.aside}
+[erstellt: 1943]
+:::
+
+
+# Fünf Prinzipien für bessere Visualisierungen
+
+::: {.absolute top="90%" left="30%" width="400px" height="336px"}
+![](img/avatar_laptop.png)
+:::
+
+::: footer
+:::
+
+## 1. Wähle eine adequate Darstellungsform {.medium}
+
+::: {.columns}
+::: {.column width=30%}
+[Nein:]{.hl .hl-dred .secfont style="font-size:1.3rem;"}
+<div style= "float:right;position:relative;vertical-align:top;">
+```{r}
+#| echo: false
+#| results: 'asis'
+#| fig.width: 2.2
+#| fig.height: 2.4
+library(tidyverse)
+salesdata <- tribble(
+  ~department, ~sales,
+  "A",950,
+  "B",1350,
+  "C",490,
+  "D",2000,
+  "E",100,
+  "F",100
+)
+salesdata |> ggplot(aes(x=department, y=sales, group=1)) +
+geom_point() +
+geom_line() +
+labs(x=NULL, y=NULL, title = "Travel expenses by department") +
+theme_minimal() +
+theme(plot.title = element_text(size=10),
+plot.title.position = "plot")
+```
+</div>
+<br><br><br><br><br><br><br>
+[OK:]{.hl .hl-green .secfont style="font-size:1.3rem;"}
+<div style= "float:right;position:relative;vertical-align:top;">
+```{r}
+#| echo: false
+#| results: 'asis'
+#| fig.width: 2.2
+#| fig.height: 2.4
+salesdata |> ggplot(aes(x=department, y=sales)) +
+geom_bar(stat="identity", width = 0.6) +
+scale_y_continuous(labels = scales::dollar) +
+labs(x=NULL, y=NULL, title = "Travel expenses by department") +
+theme_minimal() +
+theme(plot.title = element_text(size=10),
+plot.title.position = "plot",
+panel.grid.major.x = element_blank(),
+panel.grid.minor.y = element_blank())
+```
+</div>
+:::
+::: {.column width=70%}
+- Wähle den Grafik-Typ anhand der abzubildenden Daten: Welches Skalenniveau haben die Daten?
+- Was soll abgebildet werden: Vergleich, Verteilung, Zusammensetzung, Beziehung?
+- Um den passenden Grafik-Typ aus einer Vielzahl unterschiedlicher Arten zu finden, helfen Hompages wie [https://www.data-to-viz.com](https://www.data-to-viz.com) oder [https://datavizproject.com](https://datavizproject.com)
+:::
+:::
+
+## Ein einfacher Entscheidungsbaum von Darstellungsformen {.medium}
+
+![](img/charttypes.webp){fig-align="center" height="530"}
+
+
+## 2. Visualisiere die Daten sorgfältig und gewissenhaft {.medium}
+
+::: {.columns}
+::: {.column width=30%}
+[Nein:]{.hl .hl-dred .secfont style="font-size:1.3rem;"}
+![](img/princ2a.png){height=230 style="vertical-align:top;"}
+<br>
+[OK:]{.hl .hl-green .secfont style="font-size:1.3rem;"}
+![](img/princ2b.png){height=230 style="vertical-align:top;"}
+:::
+::: {.column width=70%}
+- Lege Priorität auf Genauigkeit, Klarheit und Integrität
+- Vermeide irreführende Praktiken wie Abschneiden von Achsen, Verwenden sekundärer Achsen, unlautere Auswahl von Daten, mangelnde Kontextualisierung, etc.
+- Eine gute Datenvisualisierung verzichtet auf irreführende Manipulation der Daten oder von einzelnen Grafikelementen!
+:::
+:::
+
+::: {.aside}
+Quelle: @dougherty:2021
+:::
+
+## Beispiel {.medium}
+
+::: {.columns}
+::: {.column}
+![](img/accuracy1.jpeg){height="450" fig-align="center"}
+:::
+::: {.column .fragment}
+![](img/accuracy2.jpg){height="450" fig-align="center"}
+:::
+:::
+
+::: {.aside}
+Quelle: [Patient](https://patient.info/news-and-features/whats-the-average-height-for-men)
+:::
+
+## Noch ein Beispiel {.medium}
+
+::: {.columns}
+::: {.column width=50%}
+![](img/trumptweet.png){height="450"}
+:::
+::: {.column width=50% .fragment}
+<br>
+![](img/voting-election.gif){style="border: 1px solid;"}
+:::
+:::
+
+## Und noch ein drittes Beispiel {.medium}
+
+::: {.columns}
+::: {.column}
+![](img/migration1.png){height="450" fig-align="center"}
+:::
+::: {.column .fragment}
+![](img/migration2.png){height="450" fig-align="center"}
+:::
+:::
+
+::: {.aside}
+Quelle: [The Correspondent](https://thecorrespondent.com/664/how-maps-in-the-media-make-us-more-negative-about-migrants/738023272448-bac255ba)
+:::
+
+
+## 3. Integriere Text sinnvoll in die Grafik {.medium}
+
+::: {.columns}
+::: {.column width=30%}
+[Nein:]{.hl .hl-dred .secfont style="font-size:1.3rem;"}
+![](img/princ3a.png){height=250 style="vertical-align:top;"}
+<br>
+[OK:]{.hl .hl-green .secfont style="font-size:1.3rem;"}
+![](img/princ3b.png){style="vertical-align:top;"}
+:::
+::: {.column width=70%}
+- Vermeide, dass Leser:innen ihren Kopf drehen müssen um die Bezeichnungen zu lesen
+- Überlege eine logische Reihung der Grafik (alphabetisch, nach Werten, etc.)
+- Direkte Bezeichnung ist besser als eine Legende
+- Wähle sinnvolle Titel, die auf die Botschaft fokussieren
+:::
+:::
+
+::: {.aside}
+Quelle: @dougherty:2021
+:::
+
+## Musterbeispiel {.medium}
+
+::: {.columns}
+::: {.column}
+![](img/annotation1.jpeg)
+:::
+::: {.column .fragment}
+![](img/annotation2.jpeg)
+:::
+:::
+
+::: {.aside}
+Quelle: [Washington Post](https://www.washingtonpost.com/business/2019/06/06/why-crowded-meetings-conference-rooms-make-you-so-so-tired/), [chezVoila](https://twitter.com/chezVoila/status/1136631524919513088?s=20)
+:::
+
+
+## 4. Reduziere Ablenkungen {.medium}
+
+::: {.columns}
+::: {.column width=30%}
+[Nein:]{.hl .hl-dred .secfont style="font-size:1.3rem;"}
+![](img/principle4a.png){height=230 style="vertical-align:top;"}
+<br>
+[OK:]{.hl .hl-green .secfont style="font-size:1.3rem;"}
+![](img/principle4b.png){height=230 style="vertical-align:top;"}
+:::
+::: {.column width=70%}
+- Unnötige visuelle Elemente lenken die Aufmerksamkeit weg von den wichtigen Daten
+- Vermeide grafische Elemente, die keine Information transportieren
+- Bestandteile wie etwa Achsen-Teilstriche oder Gitternetzlinien sollten entfernt oder zumindest reduziert werden
+- Überlege sorgsam, welche visuellen Elemente wirklich nötig für das Lesen der Grafik sind
+:::
+:::
+
+::: {.aside}
+Quelle: @dougherty:2021
+:::
+
+## Musterbeispiel {.medium}
+
+
+::: {.columns}
+::: {.column}
+![](img/clutter1.png)
+:::
+::: {.column .fragment}
+![](img/clutter2.png){height="400"}
+:::
+:::
+
+::: {.fragment .absolute top="15%" left="50%"}
+```{r clutter}
+#| echo: false
+#| fig.width: 6
+#| fig.height: 5
+library(tidyverse)
+data <- tribble(~area, ~inflation,
+"St. Louis", 3.2,
+"Seattle", 3.1,
+"Atlanta", 2.9,
+"Chicago", 2.8,
+"Detroit", 2.4,
+"Houston", 2.4,
+"Los Angeles", 2.2,
+"New York", 1.8,
+"Anchorage", 1.1,
+"Pittsburgh", 0.8)
+data |> ggplot(aes(x = reorder(area, inflation), y = inflation)) +
+geom_hline(yintercept = 2.4, linewidth=0.3) +
+geom_bar(stat = "identity", width=0.7, aes(fill = inflation > 2.4)) +
+annotate("text",y=2.45,x=1, label="National\nAverage: 2.4%", hjust = 0, family="Roboto", size=3) +
+geom_text(aes(y = 0.05, label = paste0(inflation,"%")), size = 3, family = "Roboto", hjust=0, color="white", fontface="bold") +
+scale_fill_manual(values = c(MetBrewer::met.brewer("Lakota")[c(1,3)])) +
+coord_flip() +
+labs(x = NULL, y = NULL,
+title = "Highest food price inflation in St. Louis and Seattle",
+subtitle = "Annual grocery store inflation, 2014") +
+theme_minimal() +
+theme(panel.grid = element_blank(),
+axis.text.y = element_text(family="Roboto", face="bold",size=10),
+axis.text.x = element_blank(),
+legend.position="none",
+plot.title = element_text(family="Roboto", face="bold"),
+plot.subtitle = element_text(family="Roboto"),
+plot.title.position = "plot")
+```
+:::
+
+::: {.aside}
+Quellen: [BlueGranite](https://www.bluegranite.com/blog/data-visualization-remove-chart-clutter-and-focus-on-the-insights)
+:::
+
+
+## 5. Vermeide die Spaghetti-Grafik und starte in Grautönen {.medium}
+
+::: {.columns}
+::: {.column width=30%}
+[Nein:]{.hl .hl-dred .secfont style="font-size:1.3rem;"}
+<div style= "float:right;position:relative;vertical-align:top;">
+```{r}
+#| echo: false
+#| results: 'asis'
+#| fig.width: 2.3
+#| fig.height: 2.4
+set.seed(10)
+simdat <- tibble(name=LETTERS[1:15], `2000`=sample(1:20,15), `2010`=sample(1:20,15), `2020`=sample(1:20,15)) |> pivot_longer(-name, names_to="years",values_to="value")
+simdat |>
+  ggplot(aes(x=years, y=value, group=name, color=name)) +
+  geom_line() +
+  geom_text(aes(label=name), hjust=-0.3, data = simdat |> filter(years==2020), size = 2.5) +
+  scale_x_discrete(expand = c(0.07,0)) +
+  labs(x = NULL, y = NULL) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+</div>
+<br><br><br><br><br><br><br>
+[OK:]{.hl .hl-green .secfont style="font-size:1.3rem;"}
+<div style= "float:right;position:relative;vertical-align:top;">
+```{r}
+#| echo: false
+#| results: 'asis'
+#| fig.width: 2.2
+#| fig.height: 2.4
+simdat |>
+  ggplot(aes(x=years, y=value, group=name, color = name)) +
+  geom_line(size = 0.3) +
+  geom_line(data = simdat |> filter(name %in% c("A","O")), size = 1.2) +
+  geom_text(aes(label=name), hjust=-0.3, data = simdat |> filter(years==2020), size = 2.5) +
+  scale_color_manual(values = c("red", rep("gray80",13), "olivedrab")) +
+  scale_x_discrete(expand = c(0.07,0)) +
+  labs(x = NULL, y = NULL) +
+  theme_minimal() +
+  theme(legend.position = "none",
+  panel.grid.minor.y = element_blank())
+```
+</div>
+:::
+::: {.column width=70%}
+- Wenn die Grafik zu viel Information transportiert, sieht sie aus wie Spaghetti
+- Versuche überladene Grafiken in kleinere Bestandteile aufzuteilen (Facets, small multiples) oder hebe die relevante Information hervor
+- Beginne mit Grautönen: das erfordert den strategischen Einsatz von Farben, Labels, etc.
+:::
+:::
+
+
+## Musterbeispiel {.medium}
+
+::: {.columns}
+::: {.column}
+![](img/spaghetti1.png)
+:::
+::: {.column .fragment}
+![](img/spaghetti2.png)
+:::
+:::
+
+::: {.aside}
+Quelle: @schwabish:2014
+:::
+
+
+# Vermögensverteilung
+
+::: {.absolute top="90%" left="30%" width="400px" height="336px"}
+![](img/avatar_shrug.png)
+:::
+
+::: footer
+:::
+
+## Definition von Privatvermögen {.smaller}
+
+::: columns 
+::: {style="font-size:1.5rem"}
+::: {.column width="30%"}
+[**Sachvermögen**]{.red style="font-size:1.7rem"}
+
+- Immobilien (Hauptwohnsitz, weitere Immobilien)
+- Unternehmenseigentum
+- Wertgegenstände
+- Fahrzeuge
+:::
+
+::: {.column width="30%"}
+[**Finanzvermögen**]{.red style="font-size:1.7rem"}
+
+- Girokonten
+- Spareinlagen
+- Investmentfonds
+- Private Pensionsversicherung
+- Lebensversicherung
+- Aktien
+- Festverzinsliche Wertpapiere
+- Sonstiges
+:::
+
+::: {.column width="30%"}
+[**Verbindlichkeiten**]{.red style="font-size:1.7rem"}
+
+- Mit Haupwohnsitz besicherte Schulden 
+- Überziehungskredite
+- Kreditkartenschulden
+- sonstige unbesicherte Kredite (z.B. Ausbildungskredite)
+:::
+:::
+:::
+
+::: {.absolute top="70%" left="60%" .textbox .fragment .fade-up}
+Kein Humankapital, kein soziales und kulturelles Kapital; Keine Renten aus der staatlichen Versicherung (marketable vs. augmented wealth)
+:::
+
+::: {.aside}
+Quelle: @oecd:2013, adaptiert
+:::
+
+## HFCS Stichprobe und Untererfassung
+
+::: {.incremental style="font-size:1.8rem"}
+- Zielpopulation in Österreich: [3,9 Mio. Haushalte]{.hl .hl-dred .secfont}
+- Bruttostichprobe im HFCS 2017: [6.280 Haushalte]{.hl .hl-dred .secfont}
+- Erfolgreiche Interview: [3.072 Haushalte]{.hl .hl-dred .secfont}
+- Ausschöpfungsquote im HFCS 2017: [ca. 50%]{.hl .hl-dred .secfont}
+- Rest: [verweigerte Interviews]{.marker-hl}, falsche Adressen, Haushalte nicht verfügbar, etc.
+:::
+
+::: {.absolute bottom="5%" left="10%" width="800px" .textbox .fragment .fade-up style="font-size:1.7rem;padding:0.5rem 1rem;" .altlist}
+- Teilnahmeverweigerung korreliert mit Vermögenshöhe ist am oberen Rand am höchsten [@vermeulen:2016]
+- Vermögende Haushalte besitzen eine größere Bandbreite an Vermögenswerten und könnten leichter etwas übersehen [@kennickell:1999]
+:::
+
+## Ex-ante Strategie gegen Untererfassung: Oversampling {.smaller}
+
+- Untererfassung von Haushalten und Vermögenswerten
+- Oversampling ist bei Vermögenserhebungen entscheidend 
+- Oversampling im HFCS 2017: :belgium: :cyprus: :de: :estonia: :es: :finland: :fr: :greece: :croatia: :hungary: :ireland: :latvia: :lithuania: :luxembourg: :poland: :portugal: :slovakia:
+- Kein oversampling: :austria: :it: :malta: :netherlands: :slovenia:
+- Wie funktioniert oversampling?
+    - Externe Datenquellen zu Privatvermögen (:fr: :es:)
+    - Liste von Straßen mit Bewohner:innen mit hohen Einkommen (:de: :slovakia:)
+    - Einkommenssteuerdaten (:luxembourg: 20% der Stichprobe aus den Top 10% Bestverdienenden)
+    - Regionen mit einem höheren Durchschnittseinkommen (:poland:)
+
+## Ex-post Strategie gegen Untererfassung: Pareto-Schätzung {.smaller}
+
+- Pareto-Verteilung ist eine empirisch gut belegte Annäherung an die Verteilung sehr hoher Vermögen
+- Zwei Parameter:
+    - Grenzwert für "sehr hohhe Vermögen" $m$
+    - Pareto-Index $\alpha$
+
+$$P_i(x_i) = Pr(X_i \leqslant x_i) = 1 - \left(\frac{m_i}{x_i}\right)^{\alpha_i}$$
+$$\forall ~i = 1...5 \wedge x_i \geqslant m_i$$
+
+::: {.fragment .fade-in}
+[Ein kleineres $\alpha$ bedeutet größere Ungleichheit. Empirisch liegt $\alpha$ für Vermögen meist rund um 1,5.]{.bubble .bubble-bottom-left .absolute top="30%" right="0%" style="--bubcol: var(--bubcol-red);max-width:350px;font-size:1.2rem;"}
+:::
+
+::: {.aside}
+<i class="fa-solid fa-book"></i> Leseempfehlung: @gabaix:2016
+:::
+
+## European Rich List Database (ERLDB) und HFCS {.smaller}
+
+![](img/rlmap_col.png){fig-align="center" height="500"}
+
+::: {.aside}
+Quelle: @disslbacher:2020
+:::
+
+## Kumulative Verteilungsfunktion (CDF) für Deutschland {.smaller}
+
+![](img/ccdf_pareto.png){fig-align="center" height="500"}
+
+::: {.aside}
+Quelle: @disslbacher:2020
+:::
+
+
+# A primer to {ggplot}
+
+::: {.absolute top="90%" left="30%" width="400px" height="336px"}
+![](img/avatar_finger.png)
+:::
+
+::: footer
+:::
+
+## The grammar of {ggplot} {.smaller}
+
+::: {.tbl-classic .tbl-larger}
+| Component | Function | Explanation |
+|-----------|----------|-------------|
+| Data | ggplot(data) | The raw data that you want to visualise. |
+| Aesthetics | aes() | Aesthetic mappings between variables and visual properties. |
+| Geometries | geom_*() | The geometric shapes representing the data. |
+| Statistics | stat_*() | The statistical transformations applied to the data. |
+| Scales | scale_*() | Maps between the data and the aesthetic dimensions. |
+| Coordinate System	| coord_*() | Maps data into the plane of the data rectangle. |
+| Facets | facet_*() | The arrangement of the data into a grid of plots. |
+| Visual Themes | theme() | The overall visual defaults of a plot. |
+: {tbl-colwidths="[25,20,55]"}
+:::
+
+::: {.aside}
+Quelle: @scherer:2022
+:::
+
+## Geometries and aesthetic mapping {.medium}
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "1|2|3|4"
+data + 
+  ggplot(aes(x = year, y = value, color = category)) +
+  geom_point(alpha = 0.5, shape = 21) +
+  scale_color_manual(values = c("red", "blue", "yellow"))
+```
+
+<br>
+
+::: {.tbl-classic .tbl-smaller}
+| Geometries | Aesthetics | Scales | Dimensions |
+|------------|------------|--------|------------|
+| points | positions (x, y) | scale_x_\*(), scale_y_\*() | position (continuous, discrete, reverse, log10, sqrt, date) |
+| lines | colors (color, fill) | scale_color_\*(), <br> scale_fill_\*() | colors (continuous, discrete, manual, gradient, gradient2, brewer) |
+| polygons | shapes (shape, linetype) | scale_shape_\*(), scale_linetype_\*() | shapes (continuous, discrete, manual, ordinal) |
+| text | size (size) | scale_size_\*(), scale_radius_\*() | sizes (continuous, discrete, manual, ordinal, area, date) |
+| boxplot | transparency (alpha) | scale_alpha_\*() | transparency (continuous, discrete, manual, ordinal, date) |
+| ...many more! | groupings (group) | | |
+: {tbl-colwidths="[15,20,25,40]"}
+:::
+
+::: {.aside}
+Source: @scherer:2022
+:::
+
+## Selected geometries in {ggplot} {.smaller}
+
+::: {.tbl-classic .tbl-smaller}
+|  | Geometry | Explanation |
+|--|----------|-------------|
+| ![](img/geom_ribbon.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | area, ribbon | An area plot is the continuous analogue of a stacked bar chart. |
+| ![](img/geom_bar.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | bar, col | Bar charts may be proportional (bar) or with absolute values (col). |
+| ![](img/geom_boxplot.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | boxplot | The boxplot compactly displays the distribution of a continuous variable.|
+| ![](img/geom_density.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | density, histogram | Kernel density plot, which is a smoothed version of the histogram. |
+| ![](img/geom_abline.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | hline, vline, abline | Draws a horizontal or vertical line with an intercept or a line with a slope. |
+| ![](img/geom_line.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | line, path | Line between observations in order of variable (line) or appearance (path) |
+| ![](img/geom_errorbar.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | linerange, errorbar | Various ways of representing a vertical interval defined by x, ymin and ymax. |
+| ![](img/geom_point.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | point, jitter | The point geom is used to create scatterplots and jitter avoids overplotting. |
+| ![](img/geom_curve.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | segment, curve | Draws a straight or curved line between points (x,y) and (xend, yend). |
+| ![](img/geom_smooth.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | smooth | Smoothed line with standard error bounds across a scatterplot. |
+| ![](img/geom_violin.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | violin | A violin plot is a compact display of a continuous distribution. |
+
+: {tbl-colwidths="[5,22,73]"}
+:::
+
+
+## Additional geometries {.smaller}
+
+::: {.columns .center style="font-size:1.3rem;"}
+::: {.column width="33%"}
+[ggstream::geom_stream()]{.secfont}
+![](img/geom_stream.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[waffle::geom_waffle()]{.secfont}
+![](img/geom_waffle.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[ggchicklet::geom_chicklet()]{.secfont}
+![](img/geom_chicklet.png){height="200"}
+:::
+:::
+
+::: {.columns .center style="font-size:1.3rem;"}
+::: {.column width="33%" .fragment}
+[ggridges::geom_density_ridges()]{.secfont}
+![](img/geom_ridges.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[ggsankey::geom_sankey()]{.secfont}
+![](img/geom_sankey.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[ggbump::geom_bump()]{.secfont}
+![](img/geom_bump.png){height="200"}
+:::
+:::
+
+## First steps {.smaller}
+
+```{r}
+#| label: load-packages
+#| include: false
+#| purl: false
+library(tidyverse)
+library(lubridate)
+library(scales)
+library(colorspace)
+library(palmerpenguins)
+data <- penguins
+```
+
+```{r}
+#| label: facet-setup
+#| output-location: column
+data |> ggplot(aes(x = bill_length_mm, 
+                  y = bill_depth_mm)) +
+  geom_point(size = 1.5, alpha = 0.5)
+```
+
+## Colors {.smaller}
+
+```{r}
+#| label: colors
+#| output-location: column
+#| code-line-numbers: "3,5"
+data |> ggplot(aes(x = bill_length_mm, 
+                  y = bill_depth_mm, 
+                  color = species)) +
+  geom_point(size = 1.5, alpha = 0.5) +
+  theme_minimal()
+```
+
+## Scales {.smaller}
+
+```{r}
+#| label: scales
+#| output-location: column
+#| code-line-numbers: "5,6,7"
+data |> ggplot(aes(x = bill_length_mm, 
+                  y = bill_depth_mm, 
+                  color = species)) +
+  geom_point(size = 1.5, alpha = 0.5) +
+  scale_color_manual(values = MetBrewer::met.brewer("Lakota")) +
+  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +
+  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +
+  theme_minimal()
+```
+
+## Labels {.smaller}
+
+```{r}
+#| label: labels
+#| output-location: column
+#| code-line-numbers: "8,9,10"
+data |> ggplot(aes(x = bill_length_mm, 
+                  y = bill_depth_mm, 
+                  color = species)) +
+  geom_point(size = 1.5, alpha = 0.5) +
+  scale_color_manual(values = MetBrewer::met.brewer("Lakota")) +
+  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +
+  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +
+  labs(x = "Bill length (in mm)", y = "Bill depth (in mm)",
+      title = "Penguins are awesome",
+      subtitle = "Depth and length of bills") +
+  theme_minimal()
+```
+
+## Annotation rather than legend {.smaller}
+
+```{r}
+#| label: annotation
+#| output-location: column
+#| code-line-numbers: "8,9,10,15"
+data |> ggplot(aes(x = bill_length_mm, 
+                  y = bill_depth_mm, 
+                  color = species)) +
+  geom_point(size = 1.5, alpha = 0.5) +
+  scale_color_manual(values = MetBrewer::met.brewer("Lakota")) +
+  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +
+  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +
+  annotate("text", x = c(34.7, 55.7, 50.7), y = c(20.7, 19, 13.6), 
+  color = MetBrewer::met.brewer("Lakota")[1:3], 
+  label = c("Adélie","Chinstrap","Gentoo"), fontface = "bold", size = 4) +
+  labs(x = "Bill length (in mm)", y = "Bill depth (in mm)",
+      title = "Penguins are awesome",
+      subtitle = "Depth and length of bills") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+## Themes {.smaller}
+
+```{r}
+#| label: addthemes
+#| output-location: column
+#| code-line-numbers: "16,17,18,19"
+data |> ggplot(aes(x = bill_length_mm, 
+                  y = bill_depth_mm, 
+                  color = species)) +
+  geom_point(size = 1.5, alpha = 0.5) +
+  scale_color_manual(values = MetBrewer::met.brewer("Lakota")) +
+  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +
+  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +
+  annotate("text", x = c(34.7, 55.7, 50.7), y = c(20.7, 19, 13.6), 
+  color = MetBrewer::met.brewer("Lakota")[1:3], 
+  label = c("Adélie","Chinstrap","Gentoo"), fontface = "bold", size = 4) +
+  labs(x = "Bill length (in mm)", y = "Bill depth (in mm)",
+      title = "Penguins are awesome",
+      subtitle = "Depth and length of bills") +
+  theme_minimal() +
+  theme(legend.position = "none",
+  plot.title.position = "plot",
+  plot.title = element_text(size = 16, face="bold"),
+  plot.subtitle = element_text(size = 13),
+  panel.grid.minor = element_blank())
+```
+
+
+## Weiterführende Literatur 
+
+::: {.tbl-larger .recommended-lit}
+|   |   |
+|---|---|
+| ![](img/schwabish.jpg) | **Jonathan Schwabish** <br> *Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks* <br> Columbia University Press <br> ISBN-13: 9780231193115 |
+| ![](img/spiegelhalter.jpeg) | **David Spiegelhalter** <br> *The Art of Statistics: Learning from Data* <br> Penguin Books UK <br> ISBN-13: 9780241258767 |
+: {tbl-colwidths="[20,80]"}
+:::
+
+## Online Bücher
+
+::: {.recommended-lit }
+|   |   |
+|--------|--------|
+| ![](img/healy.jpg){style="border: 0.5px solid black" height=150} | **Kieran Healy** <br> *Data Visualization: A Practical Introduction* <br> Princeton University Press <br> ISBN-13: 9780691181622 <br> [Link](https://socviz.co/index.html#preface) |
+| ![](img/wilke.png){style="border: 0.5px solid black" height=150} | **Claus O. Wilke** <br> *Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures* <br> O'Reilly Media <br> ISBN-13: 9781492031086 <br> [Link](https://clauswilke.com/dataviz/) |
+| ![](img/dougherty.jpg){style="border: 0.5px solid black" height=150} | **Jack Dougherty and Ilya Ilyankou** <br> *Hands-On Data Visualization: Interactive Storytelling from Spreadsheets to Code* <br> O'Reilly Media <br> ISBN-13: 9781492086000 <br> [Link](https://handsondataviz.org) |
+: {tbl-colwidths="[15,85]"}
+:::
+
+# Zeit für eine R-Session
+
+<br><br>
+
+::: {.columns style="font-size:2.5rem;color:'white';align:center;"}
+::: {.column width="30%"}
+<a href="data/code.R"><i class="fa-solid fa-code"></i></a>
+
+[R-Code]{.secfont}
+:::
+::: {.column width="30%"}
+![](img/avatar_laptop.png){height="250"}
+:::
+:::{.column width="30%"}
+<a href="data/hfcs_2021.RData"><i class="fa-solid fa-file-arrow-down"></i></a>
+
+[Daten]{.secfont}
+:::
+:::
+
+::: footer
+:::
+
+## Verwendete Literatur {.bibstyle}
+
+:::footer
+:::
