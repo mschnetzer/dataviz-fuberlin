@@ -63,6 +63,14 @@ Ein Blick in meine Arbeiten:
 ::: footer
 :::
 
+## Meilensteine der Datenvisualisierung {.medium}
+
+![](img/timeline.png){height="500" fig-align="center"}
+
+::: {.aside}
+Quelle: @friendly:2008
+:::
+
 ## William Playfair (1759-1823) {.smaller}
 
 ![](img/playfair.png){height="500" fig-align="center"}
@@ -85,6 +93,14 @@ Ein Blick in meine Arbeiten:
 
 ::: {.aside}
 [erstellt: 1854]
+:::
+
+## Florence Nightingale (1820-1910) {.medium}
+
+![](img/nightingale.jpg){fig-align="center" height="500"}
+
+::: {.aside}
+[erstellt: 1859]
 :::
 
 ## Charles Joseph Minard (1781-1870) {.smaller}

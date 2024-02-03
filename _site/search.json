@@ -7,6 +7,13 @@
     "text": "Über mich\n\n\n\n\n\n Matthias Schnetzer\n Arbeiterkammer Wien & WU Wien\n matthias.schnetzer@akwien.at\n https://mschnetzer.github.io\n matschnetzer\n\n Ein Blick in meine Arbeiten:\n\n https://mschnetzer.github.io/portfolio/\n https://github.com/mschnetzer/datendrang"
   },
   {
+    "objectID": "index.html#meilensteine-der-datenvisualisierung",
+    "href": "index.html#meilensteine-der-datenvisualisierung",
+    "title": "The Grammar of Graphics",
+    "section": "Meilensteine der Datenvisualisierung",
+    "text": "Meilensteine der Datenvisualisierung\n\n\n\n\n\n\n\nQuelle: Friendly (2008)"
+  },
+  {
     "objectID": "index.html#william-playfair-1759-1823",
     "href": "index.html#william-playfair-1759-1823",
     "title": "The Grammar of Graphics",
@@ -19,6 +26,13 @@
     "title": "The Grammar of Graphics",
     "section": "John Snow (1813-1858)",
     "text": "John Snow (1813-1858)\n\n\n\n\n\n\n\n\n\n[erstellt: 1854]"
+  },
+  {
+    "objectID": "index.html#florence-nightingale-1820-1910",
+    "href": "index.html#florence-nightingale-1820-1910",
+    "title": "The Grammar of Graphics",
+    "section": "Florence Nightingale (1820-1910)",
+    "text": "Florence Nightingale (1820-1910)\n\n\n\n\n\n\n\n[erstellt: 1859]"
   },
   {
     "objectID": "index.html#charles-joseph-minard-1781-1870",
@@ -256,6 +270,6 @@
     "href": "index.html#verwendete-literatur",
     "title": "The Grammar of Graphics",
     "section": "Verwendete Literatur",
-    "text": "Verwendete Literatur\n\n\n\n\n\n\nThe Grammar of Graphics | Universität Duisburg-Essen | 6. Februar 2024\n\n\n\n\nDisslbacher, Franziska/Ertl, Michael/List, Emanuel/Mokre, Patrick/Schnetzer, Matthias (2020). On top of the top - adjusting wealth distributions using national rich lists (Working Paper Series No. 20). INEQ.\n\n\nDougherty, Jack/Ilyankou, Ilya (2021). Hands-on data visualization: Interactive storytelling from spreadsheets to code. O’Reilly Media.\n\n\nGabaix, Xavier (2016). Power laws in economics: An introduction. Journal of Economic Perspectives, 30(1), 185–206. DOI: 10.1257/jep.30.1.185\n\n\nKennickell, Arthur B./Woodburn, R. Louise (1999). Consistent weight design for the 1989, 1992 and 1995 SCFs, and the distribution of wealth. Review of Income and Wealth, 45(2), 193–215. DOI: 10.1111/j.1475-4991.1999.tb00328.x\n\n\nOECD (2013). OECD guidelines for micro statistics on household wealth. OECD. DOI: 10.1787/9789264194878-en\n\n\nScherer, Cédric (2022). Graphic design with ggplot2. https://rstudio-conf-2022.github.io/ggplot2-graphic-design/\n\n\nSchwabish, Jonathan A. (2014). An economist’s guide to visualizing data. Journal of Economic Perspectives, 28(1), 209–234. DOI: 10.1257/jep.28.1.209\n\n\nVermeulen, Philip (2016). Estimating the top tail of the wealth distribution. The American Economic Review, 106(5), 646–650. DOI: 10.1257/aer.p20161021"
+    "text": "Verwendete Literatur\n\n\n\n\n\n\nThe Grammar of Graphics | Universität Duisburg-Essen | 6. Februar 2024\n\n\n\n\nDisslbacher, Franziska/Ertl, Michael/List, Emanuel/Mokre, Patrick/Schnetzer, Matthias (2020). On top of the top - adjusting wealth distributions using national rich lists (Working Paper Series No. 20). INEQ.\n\n\nDougherty, Jack/Ilyankou, Ilya (2021). Hands-on data visualization: Interactive storytelling from spreadsheets to code. O’Reilly Media.\n\n\nFriendly, Michael (2008). A brief history of data visualization. In Chen, C./Härdle, W./Unwin, A. (Eds.), Handbook of computational statistics: Data visualization (Vol. III, 15–56). Springer, Berlin.\n\n\nGabaix, Xavier (2016). Power laws in economics: An introduction. Journal of Economic Perspectives, 30(1), 185–206. DOI: 10.1257/jep.30.1.185\n\n\nKennickell, Arthur B./Woodburn, R. Louise (1999). Consistent weight design for the 1989, 1992 and 1995 SCFs, and the distribution of wealth. Review of Income and Wealth, 45(2), 193–215. DOI: 10.1111/j.1475-4991.1999.tb00328.x\n\n\nOECD (2013). OECD guidelines for micro statistics on household wealth. OECD. DOI: 10.1787/9789264194878-en\n\n\nScherer, Cédric (2022). Graphic design with ggplot2. https://rstudio-conf-2022.github.io/ggplot2-graphic-design/\n\n\nSchwabish, Jonathan A. (2014). An economist’s guide to visualizing data. Journal of Economic Perspectives, 28(1), 209–234. DOI: 10.1257/jep.28.1.209\n\n\nVermeulen, Philip (2016). Estimating the top tail of the wealth distribution. The American Economic Review, 106(5), 646–650. DOI: 10.1257/aer.p20161021"
   }
 ]
