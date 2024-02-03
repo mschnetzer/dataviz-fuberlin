@@ -165,7 +165,7 @@
     "href": "index.html#ex-post-strategie-gegen-untererfassung-pareto-schätzung",
     "title": "The Grammar of Graphics",
     "section": "Ex-post Strategie gegen Untererfassung: Pareto-Schätzung",
-    "text": "Ex-post Strategie gegen Untererfassung: Pareto-Schätzung\n\nPareto-Verteilung ist eine empirisch gut belegte Annäherung an die Verteilung sehr hoher Vermögen\nZwei Parameter:\n\nGrenzwert für “sehr hohhe Vermögen” \\(m\\)\nPareto-Index \\(\\alpha\\)\n\n\n\\[P_i(x_i) = Pr(X_i \\leqslant x_i) = 1 - \\left(\\frac{m_i}{x_i}\\right)^{\\alpha_i}\\] \\[\\forall ~i = 1...5 \\wedge x_i \\geqslant m_i\\]\n\nEin kleineres \\(\\alpha\\) bedeutet größere Ungleichheit. Empirisch liegt \\(\\alpha\\) für Vermögen meist rund um 1,5.\n\n\n\n Leseempfehlung: Gabaix (2016)"
+    "text": "Ex-post Strategie gegen Untererfassung: Pareto-Schätzung\n\nPareto-Verteilung ist eine empirisch gut belegte Annäherung an die Verteilung sehr hoher Vermögen\nZwei Parameter:\n\nGrenzwert für “sehr hohe Vermögen” \\(m\\)\nPareto-Index \\(\\alpha\\)\n\n\n\\[P_i(x_i) = Pr(X_i \\leqslant x_i) = 1 - \\left(\\frac{m_i}{x_i}\\right)^{\\alpha_i}\\] \\[\\forall ~i = 1...5 \\wedge x_i \\geqslant m_i\\]\n\nEin kleineres \\(\\alpha\\) bedeutet größere Ungleichheit. Empirisch liegt \\(\\alpha\\) für Vermögen meist rund um 1,5.\n\n\n\n Leseempfehlung: Gabaix (2016)"
   },
   {
     "objectID": "index.html#european-rich-list-database-erldb-und-hfcs",
