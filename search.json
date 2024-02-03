@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "index.html#über-mich",
+    "href": "index.html#über-mich",
+    "title": "The Grammar of Graphics",
+    "section": "Über mich",
+    "text": "Über mich\n\n\n\n\n\n Matthias Schnetzer\n Arbeiterkammer Wien & WU Wien\n matthias.schnetzer@akwien.at\n https://mschnetzer.github.io\n matschnetzer\n\n Ein Blick in meine Arbeiten:\n\n https://mschnetzer.github.io/portfolio/\n https://github.com/mschnetzer/datendrang"
+  },
+  {
+    "objectID": "index.html#meilensteine-der-datenvisualisierung",
+    "href": "index.html#meilensteine-der-datenvisualisierung",
+    "title": "The Grammar of Graphics",
+    "section": "Meilensteine der Datenvisualisierung",
+    "text": "Meilensteine der Datenvisualisierung\n\n\n\n\n\n\n\nQuelle: Friendly (2008)"
+  },
+  {
+    "objectID": "index.html#william-playfair-1759-1823",
+    "href": "index.html#william-playfair-1759-1823",
+    "title": "The Grammar of Graphics",
+    "section": "William Playfair (1759-1823)",
+    "text": "William Playfair (1759-1823)\n\n\n\n\n\n\n\n[erstellt: 1786]"
+  },
+  {
+    "objectID": "index.html#john-snow-1813-1858",
+    "href": "index.html#john-snow-1813-1858",
+    "title": "The Grammar of Graphics",
+    "section": "John Snow (1813-1858)",
+    "text": "John Snow (1813-1858)\n\n\n\n\n\n\n\n\n\n[erstellt: 1854]"
+  },
+  {
+    "objectID": "index.html#florence-nightingale-1820-1910",
+    "href": "index.html#florence-nightingale-1820-1910",
+    "title": "The Grammar of Graphics",
+    "section": "Florence Nightingale (1820-1910)",
+    "text": "Florence Nightingale (1820-1910)\n\n\n\n\n\n\n\n[erstellt: 1859]"
+  },
+  {
+    "objectID": "index.html#charles-joseph-minard-1781-1870",
+    "href": "index.html#charles-joseph-minard-1781-1870",
+    "title": "The Grammar of Graphics",
+    "section": "Charles Joseph Minard (1781-1870)",
+    "text": "Charles Joseph Minard (1781-1870)\n\n\n\n\n\n\n\n[erstellt: 1869]"
+  },
+  {
+    "objectID": "index.html#w.e.b.-du-bois-1868-1963",
+    "href": "index.html#w.e.b.-du-bois-1868-1963",
+    "title": "The Grammar of Graphics",
+    "section": "W.E.B. Du Bois (1868-1963)",
+    "text": "W.E.B. Du Bois (1868-1963)\n\n\n\n\n\n\n\n\n\n[erstellt: 1890]"
+  },
+  {
+    "objectID": "index.html#otto-neurath-1882-1945",
+    "href": "index.html#otto-neurath-1882-1945",
+    "title": "The Grammar of Graphics",
+    "section": "Otto Neurath (1882-1945)",
+    "text": "Otto Neurath (1882-1945)\n\n\n\n\n\n\n\n[erstellt: 1943]"
+  },
+  {
+    "objectID": "index.html#wähle-eine-adequate-darstellungsform",
+    "href": "index.html#wähle-eine-adequate-darstellungsform",
+    "title": "The Grammar of Graphics",
+    "section": "1. Wähle eine adequate Darstellungsform",
+    "text": "1. Wähle eine adequate Darstellungsform\n\n\nNein:\n\n\n\n OK:\n\n\n\n\n\nWähle den Grafik-Typ anhand der abzubildenden Daten: Welches Skalenniveau haben die Daten?\nWas soll abgebildet werden: Vergleich, Verteilung, Zusammensetzung, Beziehung?\nUm den passenden Grafik-Typ aus einer Vielzahl unterschiedlicher Arten zu finden, helfen Hompages wie https://www.data-to-viz.com oder https://datavizproject.com"
+  },
+  {
+    "objectID": "index.html#ein-einfacher-entscheidungsbaum-von-darstellungsformen",
+    "href": "index.html#ein-einfacher-entscheidungsbaum-von-darstellungsformen",
+    "title": "The Grammar of Graphics",
+    "section": "Ein einfacher Entscheidungsbaum von Darstellungsformen",
+    "text": "Ein einfacher Entscheidungsbaum von Darstellungsformen"
+  },
+  {
+    "objectID": "index.html#visualisiere-die-daten-sorgfältig-und-gewissenhaft",
+    "href": "index.html#visualisiere-die-daten-sorgfältig-und-gewissenhaft",
+    "title": "The Grammar of Graphics",
+    "section": "2. Visualisiere die Daten sorgfältig und gewissenhaft",
+    "text": "2. Visualisiere die Daten sorgfältig und gewissenhaft\n\n\nNein:   OK: \n\n\nLege Priorität auf Genauigkeit, Klarheit und Integrität\nVermeide irreführende Praktiken wie Abschneiden von Achsen, Verwenden sekundärer Achsen, unlautere Auswahl von Daten, mangelnde Kontextualisierung, etc.\nEine gute Datenvisualisierung verzichtet auf irreführende Manipulation der Daten oder von einzelnen Grafikelementen!\n\n\n\n\n\nQuelle: Dougherty/Ilyankou (2021)"
+  },
+  {
+    "objectID": "index.html#beispiel",
+    "href": "index.html#beispiel",
+    "title": "The Grammar of Graphics",
+    "section": "Beispiel",
+    "text": "Beispiel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelle: Patient"
+  },
+  {
+    "objectID": "index.html#noch-ein-beispiel",
+    "href": "index.html#noch-ein-beispiel",
+    "title": "The Grammar of Graphics",
+    "section": "Noch ein Beispiel",
+    "text": "Noch ein Beispiel"
+  },
+  {
+    "objectID": "index.html#und-noch-ein-drittes-beispiel",
+    "href": "index.html#und-noch-ein-drittes-beispiel",
+    "title": "The Grammar of Graphics",
+    "section": "Und noch ein drittes Beispiel",
+    "text": "Und noch ein drittes Beispiel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelle: The Correspondent"
+  },
+  {
+    "objectID": "index.html#integriere-text-sinnvoll-in-die-grafik",
+    "href": "index.html#integriere-text-sinnvoll-in-die-grafik",
+    "title": "The Grammar of Graphics",
+    "section": "3. Integriere Text sinnvoll in die Grafik",
+    "text": "3. Integriere Text sinnvoll in die Grafik\n\n\nNein:   OK: \n\n\nVermeide, dass Leser:innen ihren Kopf drehen müssen um die Bezeichnungen zu lesen\nÜberlege eine logische Reihung der Grafik (alphabetisch, nach Werten, etc.)\nDirekte Bezeichnung ist besser als eine Legende\nWähle sinnvolle Titel, die auf die Botschaft fokussieren\n\n\n\n\n\nQuelle: Dougherty/Ilyankou (2021)"
+  },
+  {
+    "objectID": "index.html#musterbeispiel",
+    "href": "index.html#musterbeispiel",
+    "title": "The Grammar of Graphics",
+    "section": "Musterbeispiel",
+    "text": "Musterbeispiel\n\n\n\n\n\n\n\n\n\nQuelle: Washington Post, chezVoila"
+  },
+  {
+    "objectID": "index.html#reduziere-ablenkungen",
+    "href": "index.html#reduziere-ablenkungen",
+    "title": "The Grammar of Graphics",
+    "section": "4. Reduziere Ablenkungen",
+    "text": "4. Reduziere Ablenkungen\n\n\nNein:   OK: \n\n\nUnnötige visuelle Elemente lenken die Aufmerksamkeit weg von den wichtigen Daten\nVermeide grafische Elemente, die keine Information transportieren\nBestandteile wie etwa Achsen-Teilstriche oder Gitternetzlinien sollten entfernt oder zumindest reduziert werden\nÜberlege sorgsam, welche visuellen Elemente wirklich nötig für das Lesen der Grafik sind\n\n\n\n\n\nQuelle: Dougherty/Ilyankou (2021)"
+  },
+  {
+    "objectID": "index.html#musterbeispiel-1",
+    "href": "index.html#musterbeispiel-1",
+    "title": "The Grammar of Graphics",
+    "section": "Musterbeispiel",
+    "text": "Musterbeispiel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuellen: BlueGranite"
+  },
+  {
+    "objectID": "index.html#vermeide-die-spaghetti-grafik-und-starte-in-grautönen",
+    "href": "index.html#vermeide-die-spaghetti-grafik-und-starte-in-grautönen",
+    "title": "The Grammar of Graphics",
+    "section": "5. Vermeide die Spaghetti-Grafik und starte in Grautönen",
+    "text": "5. Vermeide die Spaghetti-Grafik und starte in Grautönen\n\n\nNein:\n\n\n\n OK:\n\n\n\n\n\nWenn die Grafik zu viel Information transportiert, sieht sie aus wie Spaghetti\nVersuche überladene Grafiken in kleinere Bestandteile aufzuteilen (Facets, small multiples) oder hebe die relevante Information hervor\nBeginne mit Grautönen: das erfordert den strategischen Einsatz von Farben, Labels, etc."
+  },
+  {
+    "objectID": "index.html#musterbeispiel-2",
+    "href": "index.html#musterbeispiel-2",
+    "title": "The Grammar of Graphics",
+    "section": "Musterbeispiel",
+    "text": "Musterbeispiel\n\n\n\n\n\n\n\n\n\nQuelle: Schwabish (2014)"
+  },
+  {
+    "objectID": "index.html#definition-von-privatvermögen",
+    "href": "index.html#definition-von-privatvermögen",
+    "title": "The Grammar of Graphics",
+    "section": "Definition von Privatvermögen",
+    "text": "Definition von Privatvermögen\n\n\n\nSachvermögen\n\nImmobilien (Hauptwohnsitz, weitere Immobilien)\nUnternehmenseigentum\nWertgegenstände\nFahrzeuge\n\n\n\nFinanzvermögen\n\nGirokonten\nSpareinlagen\nInvestmentfonds\nPrivate Pensionsversicherung\nLebensversicherung\nAktien\nFestverzinsliche Wertpapiere\nSonstiges\n\n\n\nVerbindlichkeiten\n\nMit Haupwohnsitz besicherte Schulden\nÜberziehungskredite\nKreditkartenschulden\nsonstige unbesicherte Kredite (z.B. Ausbildungskredite)\n\n\n\n\n\nKein Humankapital, kein soziales und kulturelles Kapital; Keine Renten aus der staatlichen Versicherung (marketable vs. augmented wealth)\n\n\n\nQuelle: OECD (2013), adaptiert"
+  },
+  {
+    "objectID": "index.html#hfcs-stichprobe-und-untererfassung",
+    "href": "index.html#hfcs-stichprobe-und-untererfassung",
+    "title": "The Grammar of Graphics",
+    "section": "HFCS Stichprobe und Untererfassung",
+    "text": "HFCS Stichprobe und Untererfassung\n\n\nZielpopulation in Österreich: 3,9 Mio. Haushalte\nBruttostichprobe im HFCS 2017: 6.280 Haushalte\nErfolgreiche Interview: 3.072 Haushalte\nAusschöpfungsquote im HFCS 2017: ca. 50%\nRest: verweigerte Interviews, falsche Adressen, Haushalte nicht verfügbar, etc.\n\n\n\n\nTeilnahmeverweigerung korreliert mit Vermögenshöhe ist am oberen Rand am höchsten (Vermeulen, 2016)\nVermögende Haushalte besitzen eine größere Bandbreite an Vermögenswerten und könnten leichter etwas übersehen (Kennickell/Woodburn, 1999)"
+  },
+  {
+    "objectID": "index.html#ex-ante-strategie-gegen-untererfassung-oversampling",
+    "href": "index.html#ex-ante-strategie-gegen-untererfassung-oversampling",
+    "title": "The Grammar of Graphics",
+    "section": "Ex-ante Strategie gegen Untererfassung: Oversampling",
+    "text": "Ex-ante Strategie gegen Untererfassung: Oversampling\n\nUntererfassung von Haushalten und Vermögenswerten\nOversampling ist bei Vermögenserhebungen entscheidend\nOversampling im HFCS 2017: 🇧🇪 🇨🇾 🇩🇪 🇪🇪 🇪🇸 🇫🇮 🇫🇷 🇬🇷 🇭🇷 🇭🇺 🇮🇪 🇱🇻 🇱🇹 🇱🇺 🇵🇱 🇵🇹 🇸🇰\nKein oversampling: 🇦🇹 🇮🇹 🇲🇹 🇳🇱 🇸🇮\nWie funktioniert oversampling?\n\nExterne Datenquellen zu Privatvermögen (🇫🇷 🇪🇸)\nListe von Straßen mit Bewohner:innen mit hohen Einkommen (🇩🇪 🇸🇰)\nEinkommenssteuerdaten (🇱🇺 20% der Stichprobe aus den Top 10% Bestverdienenden)\nRegionen mit einem höheren Durchschnittseinkommen (🇵🇱)"
+  },
+  {
+    "objectID": "index.html#ex-post-strategie-gegen-untererfassung-pareto-schätzung",
+    "href": "index.html#ex-post-strategie-gegen-untererfassung-pareto-schätzung",
+    "title": "The Grammar of Graphics",
+    "section": "Ex-post Strategie gegen Untererfassung: Pareto-Schätzung",
+    "text": "Ex-post Strategie gegen Untererfassung: Pareto-Schätzung\n\nPareto-Verteilung ist eine empirisch gut belegte Annäherung an die Verteilung sehr hoher Vermögen\nZwei Parameter:\n\nGrenzwert für “sehr hohhe Vermögen” \\(m\\)\nPareto-Index \\(\\alpha\\)\n\n\n\\[P_i(x_i) = Pr(X_i \\leqslant x_i) = 1 - \\left(\\frac{m_i}{x_i}\\right)^{\\alpha_i}\\] \\[\\forall ~i = 1...5 \\wedge x_i \\geqslant m_i\\]\n\nEin kleineres \\(\\alpha\\) bedeutet größere Ungleichheit. Empirisch liegt \\(\\alpha\\) für Vermögen meist rund um 1,5.\n\n\n\n Leseempfehlung: Gabaix (2016)"
+  },
+  {
+    "objectID": "index.html#european-rich-list-database-erldb-und-hfcs",
+    "href": "index.html#european-rich-list-database-erldb-und-hfcs",
+    "title": "The Grammar of Graphics",
+    "section": "European Rich List Database (ERLDB) und HFCS",
+    "text": "European Rich List Database (ERLDB) und HFCS\n\n\n\n\n\n\n\nQuelle: Disslbacher et al. (2020)"
+  },
+  {
+    "objectID": "index.html#kumulative-verteilungsfunktion-cdf-für-deutschland",
+    "href": "index.html#kumulative-verteilungsfunktion-cdf-für-deutschland",
+    "title": "The Grammar of Graphics",
+    "section": "Kumulative Verteilungsfunktion (CDF) für Deutschland",
+    "text": "Kumulative Verteilungsfunktion (CDF) für Deutschland\n\n\n\n\n\n\n\nQuelle: Disslbacher et al. (2020)"
+  },
+  {
+    "objectID": "index.html#the-grammar-of-ggplot",
+    "href": "index.html#the-grammar-of-ggplot",
+    "title": "The Grammar of Graphics",
+    "section": "The grammar of {ggplot}",
+    "text": "The grammar of {ggplot}\n\n\n\n\n\n\n\n\n\nComponent\nFunction\nExplanation\n\n\n\n\nData\nggplot(data)\nThe raw data that you want to visualise.\n\n\nAesthetics\naes()\nAesthetic mappings between variables and visual properties.\n\n\nGeometries\ngeom_*()\nThe geometric shapes representing the data.\n\n\nStatistics\nstat_*()\nThe statistical transformations applied to the data.\n\n\nScales\nscale_*()\nMaps between the data and the aesthetic dimensions.\n\n\nCoordinate System\ncoord_*()\nMaps data into the plane of the data rectangle.\n\n\nFacets\nfacet_*()\nThe arrangement of the data into a grid of plots.\n\n\nVisual Themes\ntheme()\nThe overall visual defaults of a plot.\n\n\n\n\n\n\nQuelle: Scherer (2022)"
+  },
+  {
+    "objectID": "index.html#geometries-and-aesthetic-mapping",
+    "href": "index.html#geometries-and-aesthetic-mapping",
+    "title": "The Grammar of Graphics",
+    "section": "Geometries and aesthetic mapping",
+    "text": "Geometries and aesthetic mapping\n\ndata + \n  ggplot(aes(x = year, y = value, color = category)) +\n  geom_point(alpha = 0.5, shape = 21) +\n  scale_color_manual(values = c(\"red\", \"blue\", \"yellow\"))\n\n\n\n\n\n\n\n\n\n\n\n\nGeometries\nAesthetics\nScales\nDimensions\n\n\n\n\npoints\npositions (x, y)\nscale_x_*(), scale_y_*()\nposition (continuous, discrete, reverse, log10, sqrt, date)\n\n\nlines\ncolors (color, fill)\nscale_color_*(),  scale_fill_*()\ncolors (continuous, discrete, manual, gradient, gradient2, brewer)\n\n\npolygons\nshapes (shape, linetype)\nscale_shape_*(), scale_linetype_*()\nshapes (continuous, discrete, manual, ordinal)\n\n\ntext\nsize (size)\nscale_size_*(), scale_radius_*()\nsizes (continuous, discrete, manual, ordinal, area, date)\n\n\nboxplot\ntransparency (alpha)\nscale_alpha_*()\ntransparency (continuous, discrete, manual, ordinal, date)\n\n\n…many more!\ngroupings (group)\n\n\n\n\n\n\n\n\nSource: Scherer (2022)"
+  },
+  {
+    "objectID": "index.html#selected-geometries-in-ggplot",
+    "href": "index.html#selected-geometries-in-ggplot",
+    "title": "The Grammar of Graphics",
+    "section": "Selected geometries in {ggplot}",
+    "text": "Selected geometries in {ggplot}\n\n\n\n\n\n\n\n\n\n\nGeometry\nExplanation\n\n\n\n\n\narea, ribbon\nAn area plot is the continuous analogue of a stacked bar chart.\n\n\n\nbar, col\nBar charts may be proportional (bar) or with absolute values (col).\n\n\n\nboxplot\nThe boxplot compactly displays the distribution of a continuous variable.\n\n\n\ndensity, histogram\nKernel density plot, which is a smoothed version of the histogram.\n\n\n\nhline, vline, abline\nDraws a horizontal or vertical line with an intercept or a line with a slope.\n\n\n\nline, path\nLine between observations in order of variable (line) or appearance (path)\n\n\n\nlinerange, errorbar\nVarious ways of representing a vertical interval defined by x, ymin and ymax.\n\n\n\npoint, jitter\nThe point geom is used to create scatterplots and jitter avoids overplotting.\n\n\n\nsegment, curve\nDraws a straight or curved line between points (x,y) and (xend, yend).\n\n\n\nsmooth\nSmoothed line with standard error bounds across a scatterplot.\n\n\n\nviolin\nA violin plot is a compact display of a continuous distribution."
+  },
+  {
+    "objectID": "index.html#additional-geometries",
+    "href": "index.html#additional-geometries",
+    "title": "The Grammar of Graphics",
+    "section": "Additional geometries",
+    "text": "Additional geometries\n\n\nggstream::geom_stream() \n\nwaffle::geom_waffle() \n\nggchicklet::geom_chicklet() \n\n\n\n\nggridges::geom_density_ridges() \n\nggsankey::geom_sankey() \n\nggbump::geom_bump()"
+  },
+  {
+    "objectID": "index.html#first-steps",
+    "href": "index.html#first-steps",
+    "title": "The Grammar of Graphics",
+    "section": "First steps",
+    "text": "First steps\n\n\ndata |&gt; ggplot(aes(x = bill_length_mm, \n                  y = bill_depth_mm)) +\n  geom_point(size = 1.5, alpha = 0.5)"
+  },
+  {
+    "objectID": "index.html#colors",
+    "href": "index.html#colors",
+    "title": "The Grammar of Graphics",
+    "section": "Colors",
+    "text": "Colors\n\n\ndata |&gt; ggplot(aes(x = bill_length_mm, \n                  y = bill_depth_mm, \n                  color = species)) +\n  geom_point(size = 1.5, alpha = 0.5) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "index.html#scales",
+    "href": "index.html#scales",
+    "title": "The Grammar of Graphics",
+    "section": "Scales",
+    "text": "Scales\n\n\ndata |&gt; ggplot(aes(x = bill_length_mm, \n                  y = bill_depth_mm, \n                  color = species)) +\n  geom_point(size = 1.5, alpha = 0.5) +\n  scale_color_manual(values = MetBrewer::met.brewer(\"Lakota\")) +\n  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +\n  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "index.html#labels",
+    "href": "index.html#labels",
+    "title": "The Grammar of Graphics",
+    "section": "Labels",
+    "text": "Labels\n\n\ndata |&gt; ggplot(aes(x = bill_length_mm, \n                  y = bill_depth_mm, \n                  color = species)) +\n  geom_point(size = 1.5, alpha = 0.5) +\n  scale_color_manual(values = MetBrewer::met.brewer(\"Lakota\")) +\n  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +\n  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +\n  labs(x = \"Bill length (in mm)\", y = \"Bill depth (in mm)\",\n      title = \"Penguins are awesome\",\n      subtitle = \"Depth and length of bills\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "index.html#annotation-rather-than-legend",
+    "href": "index.html#annotation-rather-than-legend",
+    "title": "The Grammar of Graphics",
+    "section": "Annotation rather than legend",
+    "text": "Annotation rather than legend\n\n\ndata |&gt; ggplot(aes(x = bill_length_mm, \n                  y = bill_depth_mm, \n                  color = species)) +\n  geom_point(size = 1.5, alpha = 0.5) +\n  scale_color_manual(values = MetBrewer::met.brewer(\"Lakota\")) +\n  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +\n  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +\n  annotate(\"text\", x = c(34.7, 55.7, 50.7), y = c(20.7, 19, 13.6), \n  color = MetBrewer::met.brewer(\"Lakota\")[1:3], \n  label = c(\"Adélie\",\"Chinstrap\",\"Gentoo\"), fontface = \"bold\", size = 4) +\n  labs(x = \"Bill length (in mm)\", y = \"Bill depth (in mm)\",\n      title = \"Penguins are awesome\",\n      subtitle = \"Depth and length of bills\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "index.html#themes",
+    "href": "index.html#themes",
+    "title": "The Grammar of Graphics",
+    "section": "Themes",
+    "text": "Themes\n\n\ndata |&gt; ggplot(aes(x = bill_length_mm, \n                  y = bill_depth_mm, \n                  color = species)) +\n  geom_point(size = 1.5, alpha = 0.5) +\n  scale_color_manual(values = MetBrewer::met.brewer(\"Lakota\")) +\n  scale_x_continuous(limits = c(30,60), breaks = seq(30,60,10)) +\n  scale_y_continuous(limits = c(12,21), breaks = seq(12,21,3)) +\n  annotate(\"text\", x = c(34.7, 55.7, 50.7), y = c(20.7, 19, 13.6), \n  color = MetBrewer::met.brewer(\"Lakota\")[1:3], \n  label = c(\"Adélie\",\"Chinstrap\",\"Gentoo\"), fontface = \"bold\", size = 4) +\n  labs(x = \"Bill length (in mm)\", y = \"Bill depth (in mm)\",\n      title = \"Penguins are awesome\",\n      subtitle = \"Depth and length of bills\") +\n  theme_minimal() +\n  theme(legend.position = \"none\",\n  plot.title.position = \"plot\",\n  plot.title = element_text(size = 16, face=\"bold\"),\n  plot.subtitle = element_text(size = 13),\n  panel.grid.minor = element_blank())"
+  },
+  {
+    "objectID": "index.html#weiterführende-literatur",
+    "href": "index.html#weiterführende-literatur",
+    "title": "The Grammar of Graphics",
+    "section": "Weiterführende Literatur",
+    "text": "Weiterführende Literatur\n\n\n\n\n\n\n\n\n\nJonathan Schwabish  Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks  Columbia University Press  ISBN-13: 9780231193115\n\n\n\nDavid Spiegelhalter  The Art of Statistics: Learning from Data  Penguin Books UK  ISBN-13: 9780241258767"
+  },
+  {
+    "objectID": "index.html#online-bücher",
+    "href": "index.html#online-bücher",
+    "title": "The Grammar of Graphics",
+    "section": "Online Bücher",
+    "text": "Online Bücher\n\n\n\n\n\n\n\n\n\nKieran Healy  Data Visualization: A Practical Introduction  Princeton University Press  ISBN-13: 9780691181622  Link\n\n\n\nClaus O. Wilke  Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures  O’Reilly Media  ISBN-13: 9781492031086  Link\n\n\n\nJack Dougherty and Ilya Ilyankou  Hands-On Data Visualization: Interactive Storytelling from Spreadsheets to Code  O’Reilly Media  ISBN-13: 9781492086000  Link"
+  },
+  {
+    "objectID": "index.html#verwendete-literatur",
+    "href": "index.html#verwendete-literatur",
+    "title": "The Grammar of Graphics",
+    "section": "Verwendete Literatur",
+    "text": "Verwendete Literatur\n\n\n\n\n\n\nThe Grammar of Graphics | Freie Universität Berlin | 6. Februar 2024\n\n\n\n\nDisslbacher, Franziska/Ertl, Michael/List, Emanuel/Mokre, Patrick/Schnetzer, Matthias (2020). On top of the top - adjusting wealth distributions using national rich lists (Working Paper Series No. 20). INEQ.\n\n\nDougherty, Jack/Ilyankou, Ilya (2021). Hands-on data visualization: Interactive storytelling from spreadsheets to code. O’Reilly Media.\n\n\nFriendly, Michael (2008). A brief history of data visualization. In Chen, C./Härdle, W./Unwin, A. (Eds.), Handbook of computational statistics: Data visualization (Vol. III, 15–56). Springer, Berlin.\n\n\nGabaix, Xavier (2016). Power laws in economics: An introduction. Journal of Economic Perspectives, 30(1), 185–206. DOI: 10.1257/jep.30.1.185\n\n\nKennickell, Arthur B./Woodburn, R. Louise (1999). Consistent weight design for the 1989, 1992 and 1995 SCFs, and the distribution of wealth. Review of Income and Wealth, 45(2), 193–215. DOI: 10.1111/j.1475-4991.1999.tb00328.x\n\n\nOECD (2013). OECD guidelines for micro statistics on household wealth. OECD. DOI: 10.1787/9789264194878-en\n\n\nScherer, Cédric (2022). Graphic design with ggplot2. https://rstudio-conf-2022.github.io/ggplot2-graphic-design/\n\n\nSchwabish, Jonathan A. (2014). An economist’s guide to visualizing data. Journal of Economic Perspectives, 28(1), 209–234. DOI: 10.1257/jep.28.1.209\n\n\nVermeulen, Philip (2016). Estimating the top tail of the wealth distribution. The American Economic Review, 106(5), 646–650. DOI: 10.1257/aer.p20161021"
+  }
+]
