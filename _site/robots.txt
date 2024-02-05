@@ -1,1 +1,1 @@
-Sitemap: https://mschnetzer.github.io/dataviz-unidue-2024/sitemap.xml
+Sitemap: https://mschnetzer.github.io/dataviz-fuberlin-2024/sitemap.xml

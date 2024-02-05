@@ -54,6 +54,19 @@ Ein Blick in meine Arbeiten:
 :::
 
 
+## Über die Einheit {.smaller}
+
+::: {.columns}
+::: {.column width=50%}
+![](img/meme1.png)
+:::
+
+::: {.column width=50%}
+![](img/meme2.png)
+:::
+:::
+
+
 # Die frühen Stars der Datenvisualisierung
 
 ::: {.absolute top="90%" left="30%" width="400px" height="336px"}
@@ -255,7 +268,7 @@ Quelle: [Patient](https://patient.info/news-and-features/whats-the-average-heigh
 :::
 :::
 
-## Und noch ein drittes Beispiel {.medium}
+## Und noch ein Beispiel {.medium}
 
 ::: {.columns}
 ::: {.column}
@@ -268,6 +281,22 @@ Quelle: [Patient](https://patient.info/news-and-features/whats-the-average-heigh
 
 ::: {.aside}
 Quelle: [The Correspondent](https://thecorrespondent.com/664/how-maps-in-the-media-make-us-more-negative-about-migrants/738023272448-bac255ba)
+:::
+
+
+## Und noch ein Beispiel {.medium}
+
+::: {.columns}
+::: {.column}
+![](img/gun_deaths.jpg){height="450" fig-align="center"}
+:::
+::: {.column .fragment}
+![](img/gun_deaths_2.jpg){height="450" fig-align="center"}
+:::
+:::
+
+::: {.aside}
+Quelle: [Management Weekly](https://managementweekly.org/misleading-data-visualization/)
 :::
 
 
@@ -540,14 +569,14 @@ Quelle: @oecd:2013, adaptiert
 
 - Pareto-Verteilung ist eine empirisch gut belegte Annäherung an die Verteilung sehr hoher Vermögen
 - Zwei Parameter:
-    - Grenzwert für "sehr hohhe Vermögen" $m$
+    - Grenzwert für "sehr hohe Vermögen" $m$
     - Pareto-Index $\alpha$
 
 $$P_i(x_i) = Pr(X_i \leqslant x_i) = 1 - \left(\frac{m_i}{x_i}\right)^{\alpha_i}$$
 $$\forall ~i = 1...5 \wedge x_i \geqslant m_i$$
 
 ::: {.fragment .fade-in}
-[Ein kleineres $\alpha$ bedeutet größere Ungleichheit. Empirisch liegt $\alpha$ für Vermögen meist rund um 1,5.]{.bubble .bubble-bottom-left .absolute top="30%" right="0%" style="--bubcol: var(--bubcol-red);max-width:350px;font-size:1.2rem;"}
+[Ein kleineres $\alpha$ bedeutet größere Ungleichheit. Empirisch liegt $\alpha$ für Vermögen meist rund um 1,5.]{.bubble .bubble-bottom-left .absolute top="31%" right="0%" style="--bubcol: var(--bubcol-red);max-width:350px;font-size:1.2rem;"}
 :::
 
 ::: {.aside}
